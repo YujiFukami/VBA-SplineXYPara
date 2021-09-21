@@ -1,0 +1,62 @@
+# VBA-SplineXYPara
+- License: The MIT license
+
+- Copyright (c) 2021 YujiFukami
+
+- 開発テスト環境 Excel: Microsoft® Excel® 2019 32bit 
+
+- 開発テスト環境 OS: Windows 10 Pro
+
+実行環境など報告していただくと感謝感激雨霰。
+
+# 説明
+二次元配列（X,Y）をパラメトリック変数としてスプライン補間して等間隔に分割する。分割数はNで指定する。
+
+## 活用例
+スプライン補間による等分割が簡単に計算できる
+
+# 使い方
+実行サンプル「Sample-SplineXYPara.xlsm」の中の使い方は以下の通り。
+
+
+サンプル中身
+
+セル[B4:C14]がスプライン補間対象の二次元配列
+
+セル[F3]に分割数Nを入力
+
+![サンプル実行前](Readme用/サンプル実行前.jpg)
+
+
+「テスト実行」ボタンを押した後
+
+セル[E4:F19]にスプライン補間で等分割されたXY値が出力される
+
+![サンプル実行後](Readme用/サンプル実行後.jpg)
+
+またセル[H4:I11]にはプロシージャ[SplineXYPara]がシート関数(配列関数)としての使用例で入力してある。
+
+
+プロシージャ中身
+
+プロシージャ「SplineXYPara」が使われている。
+
+引数は
+
+-  ArrayXY2D   補間対象の二次元配列（X,Y）
+
+-  BunkatuN    補間での等分割の分割数
+
+![プロシージャ中身](Readme用/プロシージャ中身.jpg)
+
+## 設定
+実行サンプル「Sample-SplineXYPara.xlsm」の中の設定は以下の通り。
+
+### 設定1（使用モジュール）
+
+-  ModTest.bas
+-  ModSplineXYPara.bas
+
+### 設定2（参照ライブラリ）
+なし
+
