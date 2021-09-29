@@ -22,7 +22,7 @@ Option Explicit
 '------------------------------
 
 
-Function SplineXYPara(ByVal ArrayXY2D, BunkatuN&)
+Public Function SplineXYPara(ByVal ArrayXY2D, BunkatuN&)
     'パラメトリック関数形式でスプライン補間を行う
     'ArrayX,ArrayYがどちらも単調増加、単調減少でない場合に用いる。
     '＜出力値の説明＞
